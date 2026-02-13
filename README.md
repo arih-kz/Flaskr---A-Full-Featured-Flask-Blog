@@ -61,8 +61,11 @@ Visit http://127.0.0.1:5000 to see your app in action.
 ## Usage
 
 Navigate to /auth/register to create a new user.
+
 Login at /auth/login to access the blog features.
+
 Create, edit, and delete posts after logging in.
+
 View posts on the home page (/).
 
 ---
