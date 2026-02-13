@@ -28,8 +28,6 @@ It demonstrates user authentication, database integration, and CRUD operations, 
 
 ---
 
----
-
 ## Installation
 
 1. Clone the repository:
@@ -51,10 +49,9 @@ pip install -e .
 flask --app flaskr init-db
 
 5. Run the development server:
-flask --app flaskr --debug run
+flask --app flaskr run --debug
+ 
 Visit http://127.0.0.1:5000 to see your app in action.
-
----
 
 ---
 
@@ -70,8 +67,6 @@ View posts on the home page (/).
 
 ---
 
----
-
 ## Database
 Type: SQLite
 
@@ -82,8 +77,6 @@ Contains two tables:
 user → stores user accounts
 
 post → stores blog posts with author_id as foreign key
-
----
 
 ---
 
