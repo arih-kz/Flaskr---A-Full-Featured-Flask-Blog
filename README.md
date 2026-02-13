@@ -36,19 +36,24 @@ cd flaskr
 
 2. Create a virtual environment:
 (write in terminal)
+
 python -m venv .venv
+
 source .venv/bin/activate   # Linux/macOS
+
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser  #Windows
+
 .venv\Scripts\Activate.ps1      # Windows
+
 pip install -r requirements.txt
 
-3. Install the project in editable mode:
+4. Install the project in editable mode:
 pip install -e .
 
-4. pip install -e .
+5. pip install -e .
 flask --app flaskr init-db
 
-5. Run the development server:
+6. Run the development server:
 flask --app flaskr run --debug
  
 Visit http://127.0.0.1:5000 to see your app in action.
