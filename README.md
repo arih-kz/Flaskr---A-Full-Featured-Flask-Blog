@@ -27,7 +27,32 @@ It demonstrates user authentication, database integration, and CRUD operations, 
   - Editable mode for development  
 
 ---
+## Project Structure
 
+YourProject/
+│
+├── flaskr/ # Main application package
+│ ├── __init__.py # Application factory
+│ ├── db.py # Database functions
+│ ├── schema.sql # Database schema
+│ ├── auth.py # Authentication routes (login, register, logout)
+│ └── blog.py # Blog routes (create, read, update, delete)
+│
+├── static/ # Static files
+│ └── style.css # Stylesheet
+│
+├── templates/ # Jinja2 templates
+│ ├── base.html # Base layout template
+│ ├── auth/ # Authentication templates
+│ │ ├── login.html
+│ │ └── register.html
+│ └── blog/ # Blog templates
+│ ├── create.html
+│ ├── index.html
+│ └── update.html
+│
+└── pyproject.toml # Project metadata and install info
+---
 ## Installation
 
 1. Clone the repository:
