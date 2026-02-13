@@ -41,9 +41,9 @@ cd flaskr
 
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     
-  .venv\Scripts\Activate.ps1      
+   .venv\Scripts\Activate.ps1      
 
-   pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4. Install the project in editable mode:
 pip install -e .
