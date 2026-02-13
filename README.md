@@ -74,9 +74,13 @@ View posts on the home page (/).
 
 ## Database
 Type: SQLite
+
 File: flaskr.sqlite (located in the instance folder)
+
 Contains two tables:
+
 user → stores user accounts
+
 post → stores blog posts with author_id as foreign key
 
 ---
@@ -84,16 +88,21 @@ post → stores blog posts with author_id as foreign key
 ---
 
 ## Project Metadata (pyproject.toml)
-[project]
+
 name = "flaskr"
+
 version = "1.0.0"
+
 description = "The basic blog app built in the Flask tutorial."
+
 dependencies = [
     "flask",
 ]
 
 [build-system]
+
 requires = ["flit_core<4"]
+
 build-backend = "flit_core.buildapi"
 
 ---
