@@ -1,0 +1,140 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #d3badab2;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Main container */
+body > * {
+  height:100%;
+  width: 100%;
+  max-width: 520px;
+  background: radial-gradient(circle at 20% 30%, rgba(30, 90, 138, 0.2) 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.15) 0%, transparent 40%);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.274);
+  padding: 2rem;
+}
+
+/* Headings */
+h1 {
+  color: #2d3748;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* Flash messages */
+.flash {
+  margin-bottom: 1.2rem;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  background: #e0f2fe;
+  color: #075985;
+  font-size: 0.9rem;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+label {
+  font-weight: 500;
+  color: #374151;
+}
+
+input,
+textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+textarea {
+  min-height: 10em;
+  resize: vertical;
+}
+
+/* Buttons */
+input[type=submit] {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.2s ease;
+}
+
+input[type=submit]:hover {
+  background: #1e4fd1;
+}
+
+/* Danger buttons */
+input.danger {
+  background: #dc2626;
+}
+
+input.danger:hover {
+  background: #b91c1c;
+}
+
+/* Post content text wrapping */
+.post, textarea {
+  word-wrap: break-word;     /* break long words to next line */
+  overflow-wrap: break-word; /* standard version for modern browsers */
+  white-space: normal;       /* ensure normal wrapping, not preformatted */
+}
+
+/* Optional: ensure max width for content */
+.post {
+  max-width: 100%;
+}
