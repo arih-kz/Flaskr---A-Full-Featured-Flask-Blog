@@ -37,15 +37,12 @@ cd flaskr
 2. Create a virtual environment:
 (write in terminal)
 
-python -m venv .venv
+   python -m venv .venv
 
-source .venv/bin/activate   # Linux/macOS
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser  
+  .venv\Scripts\Activate.ps1      
 
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser  #Windows
-
-.venv\Scripts\Activate.ps1      # Windows
-
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. Install the project in editable mode:
 pip install -e .
